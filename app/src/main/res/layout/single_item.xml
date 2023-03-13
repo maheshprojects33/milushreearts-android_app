@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    app:cardBackgroundColor ="#000"
+    app:cardCornerRadius="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/etThumbnail"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/white_tara"
+            app:riv_border_color="#FF5722"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true" />
+
+
+        <TextView
+            android:id="@+id/etStatueName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etThumbnail"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Statue Name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/etThumbnail"
+            android:fontFamily="@font/asul"
+            android:text="8 Inch White Tara"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/etDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_below="@+id/etTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/etThumbnail"
+            android:fontFamily="@font/asul"
+            android:text="The White Tara (Sanskrit: Sitatara; Tibetan: Sgrol-dkar) was incarnated as the Chinese princess. She symbolizes purity and is often represented standing at the right hand of her consort, Avalokiteshvara, or seated with legs crossed, holding a full-blown lotus. She is generally shown with a third eye."
+            android:textColor="#FFEB3B"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etStatueName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_share" />
+
+        <ToggleButton
+            android:id="@+id/ivLike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etStatueName"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/ivAddCart"
+            android:background="@drawable/custom_like"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:id="@+id/ivAddCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/etStatueName"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/ivShare"
+            android:src="@drawable/ic_add_cart" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/etStatueName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/etStatueName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_delete" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

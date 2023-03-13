@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/etThumbnail"
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/white_tara"
+        app:riv_border_color="#FF5722"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true" />
+
+
+    <EditText
+        android:id="@+id/etStatueName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etThumbnail"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:hint="Statue Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/etThumbnail"
+        android:fontFamily="@font/asul"
+        android:hint="8 Inch White Tara"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@+id/etTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/etThumbnail"
+        android:fontFamily="@font/asul"
+        android:hint="The White Tara (Sanskrit: Sitatara; Tibetan: Sgrol-dkar) was incarnated as the Chinese princess. She symbolizes purity and is often represented standing at the right hand of her consort, Avalokiteshvara, or seated with legs crossed, holding a full-blown lotus. She is generally shown with a third eye."
+        android:textColor="#FFEB3B"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/etUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_below="@id/etStatueName"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

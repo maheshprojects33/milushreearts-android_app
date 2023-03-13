@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "219631837768",
+    "firebase_url": "https://milushree-arts.firebaseio.com",
+    "project_id": "milushree-arts",
+    "storage_bucket": "milushree-arts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219631837768:android:b1f6df2449a80e1f392e7d",
+        "android_client_info": {
+          "package_name": "com.java.milushreearts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219631837768-2uf7j2dbshhbs192ro7ee01v91ln0mfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgmnyj55VWJOE5NIVVErls4oeb0-Kn5dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219631837768-2uf7j2dbshhbs192ro7ee01v91ln0mfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

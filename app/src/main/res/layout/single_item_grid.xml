@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="#000"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivThumbnailG"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/white_tara"
+            app:riv_border_color="#FF5722"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true" />
+
+
+        <TextView
+            android:id="@+id/tvStatueNameG"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivThumbnailG"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Statue Name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/ivShareG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvStatueNameG"
+            android:layout_alignEnd="@+id/tvStatueNameG"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_share" />
+
+        <ToggleButton
+            android:id="@+id/ivLikeG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvStatueNameG"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_like"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:id="@+id/ivAddCartG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvStatueNameG"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/ivShareG"
+            android:layout_toEndOf="@+id/ivLikeG"
+            android:src="@drawable/ic_add_cart" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
